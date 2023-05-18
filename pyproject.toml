@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "ml-algorithms-from-scratch"
+version = "0.1.0"
+description = ""
+authors = ["Shun-Lung Chang <shunlung.chang@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "ml_algorithms_from_scratch"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+numpy = "^1.24.3"
+matplotlib = "^3.7.1"
+
+
+[tool.poetry.group.dev.dependencies]
+notebook = "^6.5.4"
+black = {extras = ["jupyter"], version = "^23.3.0"}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
